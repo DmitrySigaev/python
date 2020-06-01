@@ -80,10 +80,10 @@ RUN set -ex \
 
 # make some useful symlinks that are expected to exist
 RUN cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python3-config python-config
+	&& ln -sf idle3 idle \
+	&& ln -sf pydoc3 pydoc \
+	&& ln -sf python3 python \
+	&& ln -sf python3-config python-config
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
 ENV PYTHON_PIP_VERSION 20.1.1
