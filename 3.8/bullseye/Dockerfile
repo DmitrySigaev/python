@@ -19,7 +19,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		tk-dev \
 		uuid-dev \
 		gnupg dirmngr \
+		gcc \
+		libbluetooth-dev \
+		libbz2-dev \
+		libc6-dev \
+		libexpat1-dev \
+		libffi-dev \
+		libgdbm-dev \
+		liblzma-dev \
+		libncursesw5-dev \
+		libreadline-dev \
+		libsqlite3-dev \
+		libssl-dev \
+		make \
 		wget \
+		xz-utils \
+		zlib1g-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV GPG_KEY E3FF2839C048B25C084DEBE9B26995E310250568
