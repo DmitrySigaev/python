@@ -18,6 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libbluetooth-dev \
 		tk-dev \
 		uuid-dev \
+		gnupg dirmngr \
 		wget \
 	&& rm -rf /var/lib/apt/lists/*
 
